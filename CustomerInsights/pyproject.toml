@@ -1,0 +1,40 @@
+[project]
+name = ""
+version = "0.0.1"
+authors = [
+    {name = "Jacob Carson", email = "jacob.a.j.carson@gmail.com"},
+]
+description = "Enhancing Customer Insights for Improved Marketing"
+readme = "README.md"
+requires-python = ">=3.10"
+license = {file = "LICENSE"}
+keywords = ["Digital Marketing", "Data Analytics", "Clustering", "Case Study", "NLP"]
+classifiers = [
+    "Development Status :: 3 - Alpha",
+    "Intended Audience :: Science/Research",
+    "License :: OSI Approved :: MIT License",
+    "Natural Language :: English",
+    "Operating System :: OS Independent",
+    "Programming Language :: Python :: 3",
+]
+dependencies = [
+
+]
+
+[tool.setuptools.packages.find]
+include = ['CustomerInsights*']
+
+[project.urls]
+repository = "https://github.com/jacobcarson/Case-Study-1-Customer-Insights"
+
+[project.optional-dependencies]
+test = [
+    'flake8',
+    'pytest',
+    'pytest-forked', 
+    'pytest-timeout',
+    'pytest-cov',
+]
+
+[project.scripts]
+CustomerInsights = "CustomerInsights.cli:main"
