@@ -18,7 +18,12 @@ classifiers = [
     "Programming Language :: Python :: 3",
 ]
 dependencies = [
-
+    "numpy",
+    "spacy",
+    "pandas",
+    "sklearn",
+    "seaborn",
+    'matplotlib"
 ]
 
 [tool.setuptools.packages.find]
